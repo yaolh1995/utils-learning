@@ -26,7 +26,5 @@ const deepClone = (payload) => {
 };
 const b = { c: 2, d: 3 };
 const origin = { a: 1, b };
-console.log(Object.hasOwnProperty(origin), "?");
 const copy = deepClone(origin);
-origin.b.c = 666; //修改origin
-console.log(origin, copy, "copy");
+console.log(copy, "copy");
